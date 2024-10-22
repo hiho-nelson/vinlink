@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 const helvetica = localFont({
-  src: "./fonts/helvetica.woff",
+  src: "./fonts/HELVETICA.woff",
   variable: "--font-helvetica",
   weight: "500",
 });
