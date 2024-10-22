@@ -23,7 +23,7 @@ export default function Banner() {
           trigger: containerRef.current,
           start: "top top",
           end: "bottom top",
-          scrub: 1.2,
+          scrub: true,
         },
         y: 150,
       });
