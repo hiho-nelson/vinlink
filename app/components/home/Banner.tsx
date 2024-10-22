@@ -25,7 +25,7 @@ export default function Banner() {
           end: "bottom top",
           scrub: 1.2,
         },
-        y: -150,
+        y: 150,
       });
     },
     { scope: containerRef },
