@@ -4,6 +4,8 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 const helvetica = localFont({
   src: "./fonts/HELVETICA.woff",
@@ -36,6 +38,7 @@ export default function RootLayout({
         <Header/>
         {children}
         <Footer />
+        <SpeedInsights/>
       </body>
     </html>
   );
