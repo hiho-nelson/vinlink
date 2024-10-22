@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const helvetica = localFont({
+  src: "./fonts/helvetica.woff",
+  variable: "--font-helvetica",
+  weight: "500",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -24,11 +28,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className=" scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${helvetica.variable} ${spaceGrotesk.variable} antialiased`}
+        suppressHydrationWarning={true}
       >
+        <Header/>
         {children}
+        <Footer />
       </body>
     </html>
   );
