@@ -19,7 +19,6 @@ export default function Story() {
         end: "bottom bottom",
         scrub: true,
         pin: true,
-        pinSpacing: false,
       });
     },
     { scope: containerRef },

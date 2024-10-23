@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { HiArrowSmallRight } from "react-icons/hi2";
+import Slider from "./Slider";
 
 export default function Missions() {
   return (
@@ -25,7 +26,7 @@ export default function Missions() {
             proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.
           </p>
-          <button className="font-spaceGrotesk flex items-center gap-5 text-2xl text-gray-500">
+          <button className="flex items-center gap-5 font-spaceGrotesk text-2xl text-gray-500">
             Discover <HiArrowSmallRight size={30} />
           </button>
         </div>
@@ -40,14 +41,14 @@ export default function Missions() {
             proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.
           </p>
-          <button className="font-spaceGrotesk flex items-center gap-5 text-2xl text-gray-500">
+          <button className="flex items-center gap-5 font-spaceGrotesk text-2xl text-gray-500">
             Discover <HiArrowSmallRight size={30} />
           </button>
         </div>
       </div>
 
       {/* Image */}
-      <div>
+      <div className="relative w-full overflow-hidden">
         <Image
           src={"/vinlinktruck.webp"}
           alt="Vinlink truck"
@@ -55,6 +56,11 @@ export default function Missions() {
           height={900}
           className="w-full"
         />
+      </div>
+
+      {/* Slider */}
+      <div className="w-full">
+        <Slider />
       </div>
 
       {/* Missons */}
@@ -77,7 +83,7 @@ export default function Missions() {
             proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.
           </p>
-          <button className="font-spaceGrotesk flex items-center gap-5 text-2xl text-gray-500">
+          <button className="flex items-center gap-5 font-spaceGrotesk text-2xl text-gray-500">
             Discover <HiArrowSmallRight size={30} />
           </button>
         </div>
@@ -92,14 +98,14 @@ export default function Missions() {
             proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.
           </p>
-          <button className="font-spaceGrotesk flex items-center gap-5 text-2xl text-gray-500">
+          <button className="flex items-center gap-5 font-spaceGrotesk text-2xl text-gray-500">
             Discover <HiArrowSmallRight size={30} />
           </button>
         </div>
       </div>
 
       {/* Image */}
-      <div>
+      <div className="parallex relative h-[900px] w-full">
         <Image
           src={"/vinlinkfactory.webp"}
           alt="Vinlink truck"
